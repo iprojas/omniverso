@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Omniverso | </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="shortcut icon" href="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  
+    <script>
+        function go(loc) {
+          document.getElementById('calendar').src = loc;
+        }
+        </script>
+  </head>
+
+  <body>
+    <div class="container">
+        <style>
+            model-viewer#reveal {
+              --poster-color: transparent!important;
+            }
+          </style>
+      <model-viewer
+        src="img/scene2.glb"
+        shadow-intensity="0.5"
+        exposure="1.8"
+        shadow-softness="1"
+        camera-orbit="38.25deg 82.86deg 0.5046m"
+        auto-rotate
+        camera-controls
+        disable-zoom
+        min-camera-orbit="auto auto 0.3946m"
+        max-camera-orbit="auto auto auto"
+        min-field-of-view="45deg"
+        max-field-of-view="auto"
+        interaction-prompt="none"
+      ></model-viewer>
+
+      <header class="omni-header">
+        <h1>EXPLORA EL<br>OMNIVERSO<span>Explora nuevos mundos</span></h1>
+      </header>
+      <section class="pricing-section">
+        <p class="intro">
+          Ven a probar lo mejor que la realidad virtual tiene para ofrecer. Nuestra amplia biblioteca de juegos garantiza que siempre tendrás algo interesante que experimentar. 
+          <br />
+          <br /><strong>Reserva hoy mismo tu hora al <b>OMNIVERSO</b>...</strong>
+        </p>
+        <div class="pricing pricing--tenzin">
+          <div class="pricing__item">
+            <h3 class="pricing__title">15 Minutos</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">$</span>5.000
+            </div>
+            <p class="pricing__sentence">
+              Perfect for single freelancers who work by themselves
+            </p>
+            <ul class="pricing__feature-list">
+              <li class="pricing__feature">Introducción</li>
+              <li class="pricing__feature">Demo introductorio</li>
+              <li class="pricing__feature">Experiencia guiada</li>
+            </ul>
+            <a class="pricing__action" href="#calendar" onclick="go('https://calendly.com/omniverso/15min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')">Reservar hora</a>
+          </div>
+          <div class="pricing__item" style="transform: scale(1.06);">
+            <h3 class="pricing__title">30 Minutos</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">$</span>8.000
+            </div>
+            <p class="pricing__sentence">
+              Suitable for small businesses with up to 5 employees
+            </p>
+            <ul class="pricing__feature-list">
+              <li class="pricing__feature">Unlimited calls</li>
+              <li class="pricing__feature">Free hosting</li>
+              <li class="pricing__feature">10 hours of support</li>
+              <li class="pricing__feature">Social media integration</li>
+              <li class="pricing__feature">1GB of storage space</li>
+            </ul>
+            <a class="pricing__action" href="#calendar" onclick="go('https://calendly.com/omniverso/30min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')">Reservar hora</a>
+          </div>
+          <div class="pricing__item">
+            <h3 class="pricing__title">60 Minutos</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">$</span>12.000
+            </div>
+            <p class="pricing__sentence">
+              Great for large businesses with more than 5 employees
+            </p>
+            <ul class="pricing__feature-list">
+              <li class="pricing__feature">Unlimited calls</li>
+              <li class="pricing__feature">Free hosting</li>
+              <li class="pricing__feature">Unlimited hours of support</li>
+              <li class="pricing__feature">Social media integration</li>
+              <li class="pricing__feature">Anaylitcs integration</li>
+              <li class="pricing__feature">Unlimited storage space</li>
+            </ul>
+            <a class="pricing__action" href="#calendar" onclick="go('https://calendly.com/omniverso/60min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')">Reservar hora</a>
+          </div>
+        </div>    
+        <iframe src="" id="calendar" frameborder="0"></iframe>
+      </section>
+   
+
+      <section class="content"></section>
+   
+    </div>
+   
+
+  </body>
+</html>
