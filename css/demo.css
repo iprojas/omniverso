@@ -219,20 +219,21 @@ a:hover, a:focus {
 }
 
 model-viewer {
-    width: 97vw;
+    width: 93vw;
     height: 130vh;
-    top: -25vh;
-	right: -100px;
-	background-color: transparent!important;
-	position: absolute;
+    top: -5vh;
+    right: -7vw;
+    background-color: transparent!important;
+    position: absolute;
 }
 
 
 @media screen and (max-width: 40em) {
 	model-viewer{
-		width: 96vw;
-		height: 170vh;
-		top: -40vh;
+		width: 100vw;
+		right: 0vw;
+		top: 5vh;
+	
 	}
 }
 
@@ -248,7 +249,7 @@ model-viewer::part(default-progress-mask) {
 	display: none;
 }
 
-model-viewer#reveal {
+model-viewer#model {
     --poster-color: transparent;
   }
 
