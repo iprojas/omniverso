@@ -40,7 +40,7 @@ a:hover, a:focus {
 
 /* Content */
 .content {
-	padding: 3em 0;
+
 }
 
 .intro {
@@ -97,8 +97,9 @@ a:hover, a:focus {
 
 .omni-header h1 {	
 	letter-spacing: -1px;
-	font-size: 4em;
+	font-size: clamp(50px, 5.5vw, 70px);
 	line-height: 1;
+	width: 100vw;
 }
 
 .omni-header h1 span {
@@ -234,6 +235,11 @@ model-viewer {
 		right: 0vw;
 		top: 5vh;
 	
+	}
+
+	.omni-header h1 {
+		text-align: center;
+		left: 25px!important;
 	}
 }
 
