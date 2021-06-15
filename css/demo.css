@@ -38,17 +38,12 @@ a:hover, a:focus {
 	pointer-events: none;
 }
 
-/* Content */
-.content {
-
-}
-
 .intro {
-	padding: 1em;
-	max-width: 1000px;
-	text-align: center;
-	font-size: 2em;
-	opacity: 0.6;
+    padding: 1em 3em;
+    /* max-width: 1000px; */
+    text-align: center;
+    font-size: 2em;
+    opacity: 0.6;
 }
 
 .omni-header,

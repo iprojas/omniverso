@@ -32,7 +32,10 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="cards/style.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
+   
+
 
     <script>
       function go(loc) {
@@ -50,9 +53,7 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    
-    <div>
-     
+
       <model-viewer
         id="model"
         src="img/scene2.glb"
@@ -75,93 +76,129 @@
       <header class="omni-header">
         <h1>EXPLORA EL<br />OMNIVERSO<span>Arcade de Realidad Virtual</span></h1>
       </header>
-      <section class="pricing-section">
-        <p class="intro">
+      <section class="">
+        <p class="intro" style="margin-top: 100px;">
           Ven a probar lo mejor que la realidad virtual tiene para ofrecer.<br>
           Nuestra amplia biblioteca de juegos garantiza que siempre tendrás algo
           interesante que experimentar.
-          <br />
-          <br /><strong
-            >Reserva hoy mismo tu hora al <b>OMNIVERSO</b>...</strong
-          >
+         
         </p>
-        <div class="pricing pricing--tenzin">
-          <div class="pricing__item">
-            <h3 class="pricing__title">Novato</h3>
-            <div class="pricing__price">
-              <h3 class="pricing__title">15 Minutos</h3>
-              <span class="pricing__currency">$</span>6.990
-            </div>
-            <p class="pricing__sentence">
-              Perfecto para probar Realidad Virtual por primera vez
-            </p>
-            <ul class="pricing__feature-list">
-              <li class="pricing__feature">Introducción </li>
-              <li class="pricing__feature">Experiencia guiada</li>
-              <li class="pricing__feature">15 minutos que recordaras por años.</li>
-            </ul>
-            <a
-              class="pricing__action"
-              href="#calendar"
-              onclick="go('https://calendly.com/omniverso/15min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')"
-              >Agendar 15 minutos</a
-            >
-          </div>
-          <div class="pricing__item" style="transform: scale(1.06)">
-            <h3 class="pricing__title">Entusiasta</h3>
-            <div class="pricing__price">
-              <h3 class="pricing__title">30 Minutos</h3>
-              <span class="pricing__currency">$</span>10.000
-            </div>
-            <p class="pricing__sentence">
-              Suitable for small businesses with up to 5 employees
-            </p>
-            <ul class="pricing__feature-list">
-              <li class="pricing__feature">Elige las experiencias que quieras.</li>
-              <li class="pricing__feature">Experimenta libremente </li>
-              <li class="pricing__feature">Tiempo para 1 o 2 juegos.</li>
-            </ul>
-            <a
-              class="pricing__action"
-              href="#calendar"
-              onclick="go('https://calendly.com/omniverso/30min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')"
-              >Agendar 30 minutos</a
-            >
-          </div>
-          <div class="pricing__item">
-            <h3 class="pricing__title">Experto</h3>
-            
-            <div class="pricing__price">
-              <h3 class="pricing__title">60 Minutos</h3>
-              <span class="pricing__currency">$</span>15.000
-            </div>
-            <p class="pricing__sentence">
-              Great for large businesses with more than 5 employees
-            </p>
-            <ul class="pricing__feature-list">
-              <li class="pricing__feature">Elige las experiencias que quieras.</li>
-              <li class="pricing__feature">Experimenta libremente </li>
-              <li class="pricing__feature">Tiempo para 1 o 2 juegos.</li>
-            </ul>
-            <a
-              class="pricing__action"
-              href="#calendar"
-              onclick="go('https://calendly.com/omniverso/60min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')"
-              >Agendar 60 minutos</a
-            >
-          </div>
-        </div>
-
-        <section class="container">
-          
-
-        </section>
-
-
-        <iframe src="https://calendly.com/omniverso/30min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0" id="calendar" frameborder="0"></iframe>
+    
       </section>
+      
+      <div id="app" class="container">
+        <card data-image="img/1.jpg">
+        </card>
+         <card data-image="img/2.jpg">
+        </card>
+         <card data-image="img/3.jpg">
+        </card>
+         <card data-image="img/4.jpg">
+        </card>
+         <card data-image="img/5.jpg">
+        </card>
+        <card data-image="img/6.jpg">
+        </card>
+        <card data-image="img/7.jpg">
+        </card>
+        <card data-image="img/8.jpg">
+        </card>
+      </div>
 
-      <section class="content"></section>
-    </div>
+
+      <div id="myModal" class="modal">
+        <a class="cerrar" onclick="document.getElementById('myModal').style.display='none'">&times;</a>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <iframe src="https://calendly.com/omniverso/30min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0" id="calendar" frameborder="0"></iframe>
+        </div>
+      
+      </div>
+      <p class="intro">
+       
+        <br /><strong
+          >Reserva hoy mismo tu hora al <b>OMNIVERSO</b>...</strong
+        >
+      </p>
+
+      <div class="pricing pricing--tenzin">
+        <div class="pricing__item">
+          <h3 class="pricing__title">Novato</h3>
+          <div class="pricing__price">
+            <h3 class="pricing__title">15 Minutos</h3>
+            <span class="pricing__currency">$</span>6.990
+          </div>
+          <p class="pricing__sentence">
+            Perfecto para probar Realidad Virtual por primera vez
+          </p>
+          <ul class="pricing__feature-list">
+            <li class="pricing__feature">Tutorial y experiencia guiada </li>
+            <li class="pricing__feature">15 minutos que recordaras por años.</li>
+          </ul>
+          <a
+            class="pricing__action"
+            onclick="document.getElementById('myModal').style.display='block';go('https://calendly.com/omniverso/15min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')"
+            >Agendar 15 minutos</a
+          >
+        </div>
+        <div class="pricing__item" style="transform: scale(1.06)">
+          <h3 class="pricing__title">Entusiasta</h3>
+          <div class="pricing__price">
+            <h3 class="pricing__title">30 Minutos</h3>
+            <span class="pricing__currency">$</span>10.000
+          </div>
+          <p class="pricing__sentence">
+            Experimenta libremente nuestro gigantesco catalogo.
+          </p>
+          <ul class="pricing__feature-list">
+            <li class="pricing__feature">Docenas de juegos para elegir.</li>
+            <li class="pricing__feature">Experimenta libremente </li>
+          </ul>
+          <a
+            class="pricing__action"
+            href="#calendar"
+            onclick="document.getElementById('myModal').style.display='block';go('https://calendly.com/omniverso/30min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')"
+            >Agendar 30 minutos</a
+          >
+        </div>
+        <div class="pricing__item">
+          <h3 class="pricing__title">Experto</h3>
+          
+          <div class="pricing__price">
+            <h3 class="pricing__title">60 Minutos</h3>
+            <span class="pricing__currency">$</span>15.000
+          </div>
+          <p class="pricing__sentence">
+            Explora todas las posibilidades del nuevo medio. 
+          </p>
+          <ul class="pricing__feature-list">
+            <li class="pricing__feature">Conoce VR Chat y WebXR</li>
+            <li class="pricing__feature">Tiempo para completar un juego</li>
+          </ul>
+          <a
+            class="pricing__action"
+            href="#calendar"
+            onclick="document.getElementById('myModal').style.display='block';go('https://calendly.com/omniverso/60min?embed_domain=127.0.0.1%3A5500&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=0')"
+            >Agendar 60 minutos</a
+          >
+        </div>
+      </div>
+      
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+    <script  src="cards/script.js"></script>
+   
+    
+<script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  var modalTarget = document.getElementById('calendar');
+
+  window.onclick = function(event) {
+    if (event.target == modalTarget) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
   </body>
 </html>
